@@ -149,7 +149,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 124px;
+    margin-left: 15%;
+    margin-right: 15%;
     font-family: 'Nunito', sans-serif;
     margin-bottom: 24px;
 }

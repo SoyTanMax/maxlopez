@@ -25,8 +25,8 @@
             return {
                 projects: [
                     {id: "taconomics", logo: require('~/assets/Logo.svg'), description: "An NFT art gallery for taco-related art.", mock: require('~/assets/mock1.svg'), tags: ["UX/UI Design"]},
-                    {id: "tucausa", logo: require('~/assets/Logo4.svg'), description: "A PWA to find and save your favorite pokémons.", mock: require('~/assets/mock2.svg'), tags: ["UX/UI Design", "Web development"]},
-                    {id: "pokedex", logo: require('~/assets/Logo3.svg'), description: "A web platform for students to enroll in social service projects.", mock: require('~/assets/mock3.svg'),  tags: ["UX/UI Design", "Web development"]}
+                    {id: "pokedex", logo: require('~/assets/Logo4.svg'), description: "A PWA to find and save your favorite pokémons.", mock: require('~/assets/mock2.svg'), tags: ["UX/UI Design", "Web development"]},
+                    {id: "tucausa", logo: require('~/assets/Logo3.svg'), description: "A web platform for students to enroll in social service projects.", mock: require('~/assets/mock3.svg'),  tags: ["UX/UI Design", "Web development"]}
                 ]
             }
         }

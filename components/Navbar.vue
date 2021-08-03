@@ -23,15 +23,15 @@
         <div class="navbar-end">
             <ul class="navbar-item">
                 <nuxt-link :to="'/'">
-                    <li class="cool-link">
+                    <li class="cool-link" :class="{'has-text-blue': home}">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="is-hidden-desktop">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                       </svg>
                       Home
                     </li>
                 </nuxt-link>
-                <nuxt-link :to="'/about-me'" class="about">
-                    <li class="cool-link">
+                <nuxt-link :to="'/about-me'" class="about" >
+                    <li class="cool-link" :class="{'has-text-blue': home}">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="is-hidden-desktop">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
@@ -47,7 +47,7 @@
 <script>
 export default {
   name: 'Navbar',
-  props: ['hero'],
+  props: ['hero', 'home'],
   data () {
     return {
       showNav: false
@@ -71,7 +71,7 @@ export default {
     }
     .navbar{
       margin-top: 18px;
-      z-index: 99
+      z-index: 99;
     }
     li {
         list-style: none;
@@ -81,6 +81,7 @@ export default {
         letter-spacing: 0.15em;
         font-weight: normal;
     } 
+    
     .nuxt-link-exact-active li{
       border-bottom: 2px solid #3173B4;
     }
@@ -146,7 +147,10 @@ export default {
     .about{
       pointer-events: none;
     }
-    @media screen and (max-width: 1024px) {
+    .has-text-blue{
+      color: #3173B4
+    }
+    @media screen and (max-width: 1023px) {
       .navbar{
         margin-top: 0;
       }
