@@ -5,10 +5,18 @@
             <p class="is-size-3 has-text-weight-bold">Tu Causa</p>
             <a href="https://tucausa.netlify.app/">See live code</a>
         </div>
+        <br>
         <p class="is-size-5 has-text-justified has-text-weight-medium spacing">A social service UX/UI + Web development project.</p>
-        <p class="is-size-5 has-text-weight-bold">About Taconomics</p>
-        <p class="is-size-6 has-text-justified spacing">{{about}}</p>
-        <p class="is-size-5 has-text-weight-bold">Platform's requirements</p>
+        <p class="is-size-5 has-text-weight-bold">About Tu Causa and some context</p><br>
+        <p class="is-size-6 has-text-justified spacing">Tu Causa is meant to be a web platform where students from my university could enroll themselves in social service projects where they could either help with volunteering or donations.<br>At the university I belong to, it is necessary to perform a certain amount of hours of social service, for that reason I signed up for the Thunder project, where we help non-governmental organizations with their web pages. This was one of the projects I participated in. It was difficult at first because the project managers weren't sure what they wanted to build, so I had to figure it out by myself according to their needs (and by redesigning several times). <br>After several iterations, I concluded that they needed a Content Management System (CMS) since the ones that would be posting the projects would not be the site's admin but be the project managers of the non-governmental organizations. <br> Note: Tu Causa means "your cause" in spanish and it is just a temporary name we gave to the project to identify it since the ones proposed before were too large or not catchy at all.</p>
+        
+        <p class="is-size-5 has-text-weight-bold">User profiles</p><br>
+        <p class="is-size-6 has-text-justified spacing">Basically, there were 3 main user profiles that will use the platform: </p>
+        <li>Students: people interested in enrolling themselves on a social service project.</li>
+        <li>Project managers for the non-governmental organizations: people interested in posting and recruiting help for their project.</li>
+        <li class="spacing">Administrators: people in charge of managing the content posted in the site. </li>
+
+        <p class="is-size-5 has-text-weight-bold">Platform's requirements</p><br>
         <p class="is-size-6 has-text-justified spacing">{{requirements}}</p>
         <li>Explore and buy different digital art pieces.</li>
         <li>See the purchased pieces.</li>
@@ -22,15 +30,8 @@
         <li>Post their art.</li>
         <li>And claim their earnings from the NFTs sold. </li>
         <br>
-        <p class="is-size-5 has-text-weight-bold">User profiles</p>
-        <p class="is-size-6 has-text-justified">With that being said, I could get the answer to a very important question: <strong>"Who are we building this site for?"</strong></p>
-        <p class="is-size-6 has-text-justified spacing">Basically, there were 3 main user profiles that will use the platform: </p>
-        <li>Collectors: people interested in buying digital art.</li>
-        <li>Artists: people that want to publish and sell their art.</li>
-        <li class="spacing">Administrators: people that have permissions to edit the site's content.</li>
-        <p class="is-size-6 has-text-justified spacing">These types of users need to connect a wallet on the Ethereum network via Metamask to access all the functions of the platform. The last type of user is the one who is only "visiting" the platform and has permissions limited to read-only.</p>
         
-        <p class="is-size-5 has-text-weight-bold">{{"The site's architecture & User flow"}}</p>
+        <p class="is-size-5 has-text-weight-bold">{{"The site's architecture & User flow"}}</p><br>
         <p class="is-size-6 has-text-justified spacing">{{architecture}}</p>
         <img class="image spacing" :src="image1" alt="">
         <p class="is-size-5 has-text-weight-bold">Wireframing</p>
@@ -144,7 +145,11 @@
 </script>
 
 <style scoped>
-
+.header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 .tucausa{
     display: flex;
     flex-direction: column;
