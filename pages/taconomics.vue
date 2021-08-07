@@ -99,6 +99,11 @@
 <script>
     export default {
         layout: "normal",
+        head(){
+            return {
+            title: "Freelance UX/UI Designer and Frontend Web Developer"
+            }
+        },
         data() {
             return {
                 banner: require('~/assets/banner.svg'),

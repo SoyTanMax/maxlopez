@@ -8,124 +8,100 @@
         <br>
         <p class="is-size-5 has-text-justified has-text-weight-medium spacing">A social service UX/UI + Web development project.</p>
         <p class="is-size-5 has-text-weight-bold">About Tu Causa and some context</p><br>
-        <p class="is-size-6 has-text-justified spacing">Tu Causa is meant to be a web platform where students from my university could enroll themselves in social service projects where they could either help with volunteering or donations.<br>At the university I belong to, it is necessary to perform a certain amount of hours of social service, for that reason I signed up for the Thunder project, where we help non-governmental organizations with their web pages. This was one of the projects I participated in. It was difficult at first because the project managers weren't sure what they wanted to build, so I had to figure it out by myself according to their needs (and by redesigning several times). <br>After several iterations, I concluded that they needed a Content Management System (CMS) since the ones that would be posting the projects would not be the site's admin but be the project managers of the non-governmental organizations. <br> Note: Tu Causa means "your cause" in spanish and it is just a temporary name we gave to the project to identify it since the ones proposed before were too large or not catchy at all.</p>
+        <p class="is-size-6 has-text-justified spacing">Tu Causa is meant to be a web platform where students from my university could enroll themselves in social service projects where they could either help with volunteering or donations.
+            <br>At the university I belong to, it is necessary to perform a certain amount of hours of social service, for that reason I signed up for Thunder, a project where we help non-governmental organizations with their web pages. Tu Causa is was one of the projects I participated in. 
+            At first, it was a complex situation because the project managers weren't sure what they wanted to build, so I had to figure it out by myself according to their needs (and by redesigning several times). <br>After several iterations, I concluded that they needed a Content Management System (CMS) since the ones that would be posting the projects on the platform would not be the site's admin but be the project managers of the non-governmental organizations. 
+            <br> <strong>Note: </strong>Tu Causa means "your cause" in spanish, and it is just a temporary name we gave to the project to identify it since the ones proposed before were too large or not catchy at all.</p>
         
         <p class="is-size-5 has-text-weight-bold">User profiles</p><br>
         <p class="is-size-6 has-text-justified spacing">Basically, there were 3 main user profiles that will use the platform: </p>
         <li>Students: people interested in enrolling themselves on a social service project.</li>
-        <li>Project managers for the non-governmental organizations: people interested in posting and recruiting help for their project.</li>
+        <li>Project managers of the non-governmental organizations: people interested in posting and recruiting help for their project.</li>
         <li class="spacing">Administrators: people in charge of managing the content posted in the site. </li>
 
         <p class="is-size-5 has-text-weight-bold">Platform's requirements</p><br>
-        <p class="is-size-6 has-text-justified spacing">{{requirements}}</p>
-        <li>Explore and buy different digital art pieces.</li>
-        <li>See the purchased pieces.</li>
-        <li>Buy $TACO.</li>
-        <li>Stake $Salsa (an alternative cryptocurrency used to buy unique art pieces) and obtain Lemons(the platform's main currency to buy art).</li>
-        <li>Know more about the whole project and get information about the smart contracts. </li>
-        <li>Communicate with the Taconomics team so people could enroll themselves as artists.</li>
+        <p class="is-size-6 has-text-justified spacing">In general, the students, or common users, should be able to: </p>
+        <li>See all the projects posted by the non-governamental organizations.</li>
+        <li>Search projects through filters according to their preferences.</li>
+        <li>See the projects details and contact the project managers. </li>
         <br>
-        <p class="is-size-6 has-text-justified spacing">But that was not everything, because the platform was needed to built for artists too, so they could: </p>
-        <li>Create their collections.</li>
-        <li>Post their art.</li>
-        <li>And claim their earnings from the NFTs sold. </li>
+
+        <p class="is-size-6 has-text-justified spacing">Project managers using this platform should be able to: </p>
+        <li>Register an account for their organization through a form that would be checked later on by the admins. </li>
+        <li>Post, edit and erase posts for their social service projects.</li>
+        <li>Upload images for their posts.</li>
+        <br>
+
+        <p class="is-size-6 has-text-justified spacing">Admins should be able to: </p>
+        <li>Review the forms from the organizations registered to post their projects.</li>
+        <li>Control which projects get posted.</li>
         <br>
         
         <p class="is-size-5 has-text-weight-bold">{{"The site's architecture & User flow"}}</p><br>
-        <p class="is-size-6 has-text-justified spacing">{{architecture}}</p>
-        <img class="image spacing" :src="image1" alt="">
-        <p class="is-size-5 has-text-weight-bold">Wireframing</p>
+        <p class="is-size-6 has-text-justified spacing">Since it was a project that needed a fast development, I didn't had a lot of time to design the wireframes properly, so I just drew the basic structure of the site and proceeded to make the final designs. <br> 
+        The general idea is to build a site where you could see through the projects right away and filter them, so the home page is built to accomplish these task. After the hero section, I immediately placed the filters so the users can search whatever kind of project they're looking for. <br>
+        Once you click on a specific project, you should be sent to that project page. Afterwards you can click on "see more" to get more information about the organization that posted that project or more projects related.
+        </p>
         <div class="wireframes">
             <img class="image spacing" :src="image2" alt="">
+            <p class="is-size-6 has-text-justified spacing">These sections below are meant to be used by the project managers of the organizations to manage the projects that they have posted.</p>
             <img class="image spacing" :src="image3" alt="">
-            <img class="image spacing" :src="image4" alt="">
-            <img class="image spacing" :src="image5" alt="">
         </div>
-        <p class="is-size-5 has-text-weight-bold">Main components</p>
-        <p class="is-size-6 has-text-weight-bold">The slider</p>
-        <p class="is-size-6 has-text-justified spacing">{{slider}}</p>
-        <img class="image spacing" :src="image6" alt="">
-        <p class="is-size-6 has-text-weight-bold">Artist component</p>
-        <p class="is-size-6 has-text-justified spacing">{{artist}}</p>
-        <img class="image spacing" :src="image7" alt="">
-        <p class="is-size-6 has-text-weight-bold">Item component</p>
-        <p class="is-size-6 has-text-justified spacing">{{item}}</p>
-        <img class="image spacing" :src="image8" alt="">
-        <p class="is-size-6 has-text-weight-bold">Buy Taco / Stake Salsa component</p>
-        <p class="is-size-6 has-text-justified spacing">{{buy}}</p>
-        <p class="is-size-6 has-text-justified spacing">{{buy2}}</p>
-        <p class="is-size-6 has-text-justified spacing">{{buy3}}</p>
-        <p class="is-size-6 has-text-justified spacing">{{buy4}}</p>
-        <img class="image spacing" :src="image8" alt="">
 
-        <p class="is-size-5 has-text-weight-bold">Style Guide</p>
-        <p class="is-size-6 has-text-justified spacing">{{style}}</p>
-        <p class="is-size-6 has-text-weight-bold">Choosing the typography</p>
-        <p class="is-size-6 has-text-justified spacing">{{typo}}</p>
-        <div class="columns">
-            <div class="column">
-                <img class="image spacing" :src="image9" alt="">
-            </div>
-            <div class="column">
-                <p class="is-size-6 has-text-justified spacing">{{typo2}}</p>
-            </div>
-        </div>
-        <p class="is-size-6 has-text-weight-bold">Designing the Logo</p>
-        <p class="is-size-6 has-text-justified spacing">{{logo}}</p>
-        <p class="is-size-6 has-text-justified spacing">{{logo2}}</p>
+        <p class="is-size-5 has-text-weight-bold">Final designs</p><br>
+        
+        <p class="is-size-6 has-text-justified spacing">Home page</p>
+        <img class="image spacing" :src="image4" alt="">
+        
+        <p class="is-size-6 has-text-justified spacing">Single product page</p>
+        <img class="image spacing" :src="image5" alt="">
+        
+        <p class="is-size-6 has-text-justified spacing">Single organization page</p>
+        <img class="image spacing" :src="image6" alt="">
+        
+        <p class="is-size-6 has-text-justified spacing">My projects</p>
+        <img class="image spacing" :src="image7" alt="">
+        
+        <p class="is-size-6 has-text-justified spacing">Edit / create project</p>
+        <img class="image spacing" :src="image8" alt="">
+        
+        <p class="is-size-6 has-text-justified spacing">Login page</p>
+        <img class="image spacing" :src="image9" alt="">
+        
+        <p class="is-size-6 has-text-justified spacing">Register form</p>
         <img class="image spacing" :src="image10" alt="">
-        <p class="is-size-6 has-text-weight-bold">SVG Assets</p>
-        <p class="is-size-6 has-text-justified spacing">{{assets}}</p>
+        
+        <p class="is-size-5 has-text-weight-bold">UI elements</p><br>
         <img class="image spacing" :src="image11" alt="">
-        <p class="is-size-6 has-text-weight-bold">Color Palette</p>
-        <img class="image spacing" :src="image12" alt="">
-        <p class="is-size-6 has-text-weight-bold">UI elements</p>
-        <img class="image spacing" :src="image13" alt="">
-        <p class="is-size-5 has-text-weight-bold">Final Designs</p>
-        <p class="is-size-6 has-text-justified spacing">The slider</p>
-        <img class="image spacing" :src="image14" alt="">
-        <p class="is-size-6 has-text-justified spacing">Artist component</p>
-        <img class="image spacing" :src="image15" alt="">
-        <p class="is-size-6 has-text-justified spacing">Items component</p>
-        <img class="image spacing" :src="image16" alt="">
-        <p class="is-size-6 has-text-justified spacing">Buy item view</p>
-        <img class="image spacing" :src="image17" alt="">
-        <p class="is-size-6 has-text-justified spacing">Navigation bar active / Buy Taco / Stake Salsa component</p>
-        <img class="image spacing" :src="image18" alt="">
-        <p class="is-size-6 has-text-justified spacing">Sell your art</p>
-        <img class="image spacing" :src="image19" alt="">
+
+        <p class="is-size-5 has-text-weight-bold">Building the site</p><br>
+        <p class="is-size-6 has-text-justified spacing">Once I had the designs ready, building the front end was going to be way easier. For this platform I decided to use Vue.js as the Javascript framework and Nuxt.js on top of it for a faster development. Additionally, Firebase was used in order to handle the authentication needed, the collections for the posts and the storage for the images in each post. <br> 
+        Here is the link to <a href="https://tucausa.netlify.app/">see the live code</a> and the <a href="https://github.com/SoyTanMax/tucausa">github repository</a>.</p>
     </div>
 </template>
 
 <script>
     export default {
         layout: "normal",
+        head(){
+            return {
+            title: "Freelance UX/UI Designer and Frontend Web Developer"
+            }
+        },
         data() {
             return {
                 banner: require('~/assets/banner2.svg'),
                 image1: require('~/assets/architecture.png'),
-                image2: require('~/assets/image.png'),
-                image3: require('~/assets/image1.png'),
-                image4: require('~/assets/image2.png'),
-                image5: require('~/assets/image3.png'),
-                image6: require('~/assets/slider.png'),
-                image7: require('~/assets/artist.png'),
-                image8: require('~/assets/item.png'),
-                image8: require('~/assets/buy.png'),
-                image9: require('~/assets/fonts.png'),
-                image10: require('~/assets/logo.png'),
-                image11: require('~/assets/assets.svg'),
-                image12: require('~/assets/colors.png'),
-                image13: require('~/assets/ui.png'),
-                image14: require('~/assets/image4.png'),
-                image15: require('~/assets/image5.png'),
-                image16: require('~/assets/image6.png'),
-                image17: require('~/assets/image7.png'),
-                image18: require('~/assets/image8.png'),
-                image19: require('~/assets/image9.png'),
-                about: "Taconomics is meant to be a decentralized application (DApp) that seeks to create a launchpad so that latino artists can make themselves known through their digital art. In other words, it's an NFT art gallery where all the art exposed is in some way related to Tacos, because $TACO is the cryptocurrency used in this platform.",
-                architecture: "Taking into account the different user types and the platform requirements, I came up with the platform's general user flow: ",
-                requirements: "After talking to the client, who is the responsable and founder of Taconomics, I got a pretty good notion of what we needed to build. This notion arose from listing the requirements of the product, including its functional and non functional properties. Generally speaking, Taconomics needed to be a web application that allowed the user to:",
+                image2: require('~/assets/image10.png'),
+                image3: require('~/assets/image11.png'),
+                image4: require('~/assets/image12.png'),
+                image5: require('~/assets/image13.png'),
+                image6: require('~/assets/image14.png'),
+                image7: require('~/assets/image15.png'),
+                image8: require('~/assets/image16.png'),
+                image9: require('~/assets/image17.png'),
+                image10: require('~/assets/image18.png'),
+                image11: require('~/assets/image19.png'),
                 slider: "Originally, I proposed a simple hero page with a heading, an image, and a call-to-action button, but the client suggested a slider with the main actions that you can take in the platform and I thought it was a great idea so we went with it. The slider consisted in two slides, one for buying and the other one for selling art. These slides were meant to contain custom graphics for Taconomics, graphics which we will see later on the Style Guide section.",
                 artist: "These component is meant to change state when hovered on to see a description of the artist and a link to see its collection in full detail.",
                 item:"These are meant to be card-like components to show an overview of the NFTs in the gallery, including its price, rarity, and a link to see its full detail.",
@@ -134,11 +110,6 @@
                 buy3:"The second component is a little bit more complex, given that there are two ways in which you can make Salsa: the multi-asset or the single-asset way. In the first one, you use $TACO and WETH to create $Salsa, and in the second one you select either $TACO or WETH to make $SALSA.",
                 buy4:"To select either the multi-asset or the single asset way I suggested a select button so as not to spam the switch component. Once you select the multi-asset way, you have to choose again between $TACO and WETH, so I went with option buttons but designed in a way that doesn't feel like an option button.",
                 style: "Since the begging the client mentioned that Taconomics needed a logo and a little bit of branding and I was delighted to work on it. At first, I suggested going with a 3d-like concept that has become very popular since last year but the client said he had a more of a flat style in mind.",
-                typo: "For me the typography you use in a product is a very important aspect of the design (and should for every company) because it helps a ton to build the product's image. Since we were building something flat and not that serious, I suggested 5 different fonts for the client to choose (it could be one or two).",
-                typo2: "Most of the designs contain Nunito and the Monserrat was used very subtly in some UI elements.",
-                logo: "For some reason, I couldn't picture anything but a Taco with a smile, so I did my best to meet the client's requirements. The design is also very cohesive with the chosen typography.",
-                logo2: "Fun fact / Note: In Mexico, it's very common to go to a Taco stand and when you are offered salsa, they put it in a bottle similar to the 'i' in Taconomics, that's why it looks like that. ",
-                assets: "These handcrafted svg designs were created exclusively for the platform."
             }
         },
     }
