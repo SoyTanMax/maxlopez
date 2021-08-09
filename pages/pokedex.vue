@@ -3,9 +3,9 @@
         <img class="banner" :src="banner" alt="">
         <div class="header">
             <p class="is-size-3 has-text-weight-bold">Pokedex app</p>
-            <a href="https://tucausa.netlify.app/">See live code</a>
+            <a href="https://github.com/SoyTanMax/pokedex">See Github repo</a>
         </div>
-        <p class="is-size-5 has-text-justified has-text-weight-medium spacing">A social service UX/UI + Web development project.</p>
+        <p class="is-size-5 has-text-justified has-text-weight-medium spacing">A mobile app development project with SwiftUI.</p>
         <p class="is-size-5 has-text-weight-bold">About Taconomics</p>
         <p class="is-size-6 has-text-justified spacing">{{about}}</p>
         <p class="is-size-5 has-text-weight-bold">Platform's requirements</p>
@@ -106,7 +106,7 @@
         },
         data() {
             return {
-                banner: require('~/assets/banner2.svg'),
+                banner: require('~/assets/banner3.svg'),
                 image1: require('~/assets/architecture.png'),
                 image2: require('~/assets/image.png'),
                 image3: require('~/assets/image1.png'),
@@ -149,7 +149,11 @@
 </script>
 
 <style scoped>
-
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .tucausa{
     display: flex;
     flex-direction: column;

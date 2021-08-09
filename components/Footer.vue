@@ -24,15 +24,9 @@
                 <button class="button is-fullwidth is-rounded" type="submit">Send</button>
                 <div class="is-size-1 has-text-centered">
                     <ul>
-                        <router-link :to="{ name: ''}">
-                            <li><i class="fab fa-instagram"></i></li>
-                        </router-link>
-                        <router-link :to="{ name: ''}">
+                        <a href="https://github.com/SoyTanMax">
                             <li><i class="fab fa-github"></i></li>
-                        </router-link>
-                        <router-link :to="{ name: ''}">
-                            <li><i class="fab fa-whatsapp"></i></li>
-                        </router-link>
+                        </a>
                     </ul>
                 </div>
             </form>

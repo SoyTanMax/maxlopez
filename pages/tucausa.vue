@@ -5,21 +5,20 @@
             <p class="is-size-3 has-text-weight-bold">Tu Causa</p>
             <a href="https://tucausa.netlify.app/">See live code</a>
         </div>
-        <br>
         <p class="is-size-5 has-text-justified has-text-weight-medium spacing">A social service UX/UI + Web development project.</p>
-        <p class="is-size-5 has-text-weight-bold">About Tu Causa and some context</p><br>
+        <p class="is-size-5 has-text-weight-bold">About Tu Causa and some context</p>
         <p class="is-size-6 has-text-justified spacing">Tu Causa is meant to be a web platform where students from my university could enroll themselves in social service projects where they could either help with volunteering or donations.
             <br>At the university I belong to, it is necessary to perform a certain amount of hours of social service, for that reason I signed up for Thunder, a project where we help non-governmental organizations with their web pages. Tu Causa is was one of the projects I participated in. 
             At first, it was a complex situation because the project managers weren't sure what they wanted to build, so I had to figure it out by myself according to their needs (and by redesigning several times). <br>After several iterations, I concluded that they needed a Content Management System (CMS) since the ones that would be posting the projects on the platform would not be the site's admin but be the project managers of the non-governmental organizations. 
             <br> <strong>Note: </strong>Tu Causa means "your cause" in spanish, and it is just a temporary name we gave to the project to identify it since the ones proposed before were too large or not catchy at all.</p>
         
-        <p class="is-size-5 has-text-weight-bold">User profiles</p><br>
+        <p class="is-size-5 has-text-weight-bold">User profiles</p>
         <p class="is-size-6 has-text-justified spacing">Basically, there were 3 main user profiles that will use the platform: </p>
         <li>Students: people interested in enrolling themselves on a social service project.</li>
         <li>Project managers of the non-governmental organizations: people interested in posting and recruiting help for their project.</li>
         <li class="spacing">Administrators: people in charge of managing the content posted in the site. </li>
 
-        <p class="is-size-5 has-text-weight-bold">Platform's requirements</p><br>
+        <p class="is-size-5 has-text-weight-bold">Platform's requirements</p>
         <p class="is-size-6 has-text-justified spacing">In general, the students, or common users, should be able to: </p>
         <li>See all the projects posted by the non-governamental organizations.</li>
         <li>Search projects through filters according to their preferences.</li>
@@ -37,7 +36,7 @@
         <li>Control which projects get posted.</li>
         <br>
         
-        <p class="is-size-5 has-text-weight-bold">{{"The site's architecture & User flow"}}</p><br>
+        <p class="is-size-5 has-text-weight-bold">{{"The site's architecture & User flow"}}</p>
         <p class="is-size-6 has-text-justified spacing">Since it was a project that needed a fast development, I didn't had a lot of time to design the wireframes properly, so I just drew the basic structure of the site and proceeded to make the final designs. <br> 
         The general idea is to build a site where you could see through the projects right away and filter them, so the home page is built to accomplish these task. After the hero section, I immediately placed the filters so the users can search whatever kind of project they're looking for. <br>
         Once you click on a specific project, you should be sent to that project page. Afterwards you can click on "see more" to get more information about the organization that posted that project or more projects related.
@@ -48,7 +47,7 @@
             <img class="image spacing" :src="image3" alt="">
         </div>
 
-        <p class="is-size-5 has-text-weight-bold">Final designs</p><br>
+        <p class="is-size-5 has-text-weight-bold">Final designs</p>
         
         <p class="is-size-6 has-text-justified spacing">Home page</p>
         <img class="image spacing" :src="image4" alt="">
@@ -74,7 +73,7 @@
         <p class="is-size-5 has-text-weight-bold">UI elements</p><br>
         <img class="image spacing" :src="image11" alt="">
 
-        <p class="is-size-5 has-text-weight-bold">Building the site</p><br>
+        <p class="is-size-5 has-text-weight-bold">Building the site</p>
         <p class="is-size-6 has-text-justified spacing">Once I had the designs ready, building the front end was going to be way easier. For this platform I decided to use Vue.js as the Javascript framework and Nuxt.js on top of it for a faster development. Additionally, Firebase was used in order to handle the authentication needed, the collections for the posts and the storage for the images in each post. <br> 
         Here is the link to <a href="https://tucausa.netlify.app/">see the live code</a> and the <a href="https://github.com/SoyTanMax/tucausa">github repository</a>.</p>
     </div>

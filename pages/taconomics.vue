@@ -149,7 +149,11 @@
 </script>
 
 <style scoped>
-
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .taconomics{
     display: flex;
     flex-direction: column;
