@@ -3,7 +3,7 @@
         <p class="title">Latest projects</p>
         <div class="projects-container">
             <div v-for="project in projects" :key="project.id">
-                <Project 
+                <Project class="project"
                     :id="project.id"
                     :logo="project.logo"
                     :description="project.description"
@@ -46,6 +46,12 @@
         gap: 48px;
         padding: 24px 0 0;
         font-family: 'Nunito', sans-serif;
+    }
+    .project{
+        transition: 300ms;
+    }
+    .project:hover{
+        transform: scale(1.03);
     }
     
     @media screen and (max-width: 769px) {

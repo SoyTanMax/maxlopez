@@ -121,6 +121,10 @@
 }
 .desc{
   font-size: 24px;
+  animation-name: appear;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .mywork{
   font-size: 20px;
